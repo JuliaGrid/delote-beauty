@@ -7,6 +7,7 @@ import { AppRouter } from './router';
 import { useTheme } from './ThemeProvider';
 import './i18n/config';
 import cls from './App.module.scss';
+import {Spinner} from "shared/ui/Spinner/ui/Spinner";
 
 export function App() {
     const { theme } = useTheme();
@@ -18,7 +19,7 @@ export function App() {
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <Suspense>
+            <Suspense fallback={<Spinner />}>
                 <div className={cls.wrapper}>
                     <div className={cls.main}>
                         <Navbar onToggleSidebar={onToggleSidebar} />
