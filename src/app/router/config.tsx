@@ -1,5 +1,5 @@
-import { lazy } from "react";
-import { RouteProps } from "react-router-dom"
+import { lazy } from 'react';
+import { RouteProps } from 'react-router-dom';
 
 export enum AppRoutes {
     MAIN = 'main',
@@ -8,8 +8,8 @@ export enum AppRoutes {
 
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
-    [AppRoutes.ABOUT]: '/about'
-}
+    [AppRoutes.ABOUT]: '/about',
+};
 
 const MainPage = lazy(() => import('pages/MainPage'));
 const AboutPage = lazy(() => import('pages/AboutPage'));
@@ -17,10 +17,10 @@ const AboutPage = lazy(() => import('pages/AboutPage'));
 export const config: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
         path: RoutePath.main,
-        element: <MainPage />
+        element: <MainPage />,
     },
     [AppRoutes.ABOUT]: {
         path: RoutePath.about,
-        element: <AboutPage />
-    }
-}
+        element: <AboutPage />,
+    },
+};

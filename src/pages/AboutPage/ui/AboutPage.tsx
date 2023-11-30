@@ -1,13 +1,15 @@
-import classes from './AboutPage.module.scss'
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import classes from './AboutPage.module.scss';
 
 export const AboutPage = () => {
-    const {t} = useTranslation('about');
+    const { t } = useTranslation('about');
 
-    return <div className={classes.block}>
-        {t('Это блок')}
-        dfsd
-    </div>
-}
+    return (
+        <div className={classes.block}>
+            {t('Это блок')}
+            dfsd
+        </div>
+    );
+};
 
-export default AboutPage
+export default AboutPage;

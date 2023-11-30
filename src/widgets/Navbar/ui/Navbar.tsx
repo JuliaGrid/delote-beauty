@@ -1,7 +1,7 @@
-import { classNames } from "helpers/classNames"
-import cls from './Navbar.module.scss'
-import {AppLink} from "shared/ui/AppLink/AppLink";
-import {RoutePath} from "app/router/config";
+import { classNames } from 'helpers/classNames';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { RoutePath } from 'app/router/config';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 
 export const Navbar = (props: NavbarProps) => {
-    const {className, onToggleSidebar} = props
+    const { className, onToggleSidebar } = props;
 
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
@@ -19,5 +19,5 @@ export const Navbar = (props: NavbarProps) => {
             <button onClick={onToggleSidebar}>toggle</button>
 
         </div>
-    )
-}
+    );
+};

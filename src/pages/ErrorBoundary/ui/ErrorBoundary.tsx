@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface MyProps {
     children?: any;
@@ -11,7 +11,7 @@ interface MyState {
 export class ErrorBoundary extends React.Component<MyProps, MyState> {
     constructor(props: {} | Readonly<{}>) {
         super(props);
-        this.state = { error: "" };
+        this.state = { error: '' };
     }
 
     componentDidCatch(error: { name: any; message: any; }) {
@@ -24,8 +24,7 @@ export class ErrorBoundary extends React.Component<MyProps, MyState> {
             return (
                 <div>{error}</div>
             );
-        } else {
-            return <>{this.props.children}</>;
         }
+        return <>{this.props.children}</>;
     }
 }
