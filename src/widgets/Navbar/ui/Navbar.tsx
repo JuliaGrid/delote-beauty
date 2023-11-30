@@ -1,7 +1,7 @@
 import { classNames } from "helpers/classNames"
-import { RoutePath } from "shared/config/routeConfig/routeConfig"
 import cls from './Navbar.module.scss'
 import {AppLink} from "shared/ui/AppLink/AppLink";
+import {RoutePath} from "app/router/config";
 
 interface NavbarProps {
     className?: string;
