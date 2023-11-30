@@ -2,7 +2,7 @@ import classes from './AboutPage.module.scss'
 import {useTranslation} from "react-i18next";
 
 export const AboutPage = () => {
-    const {t, i18n} = useTranslation();
+    const {t, i18n} = useTranslation('about');
 
     const toggle = () => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
