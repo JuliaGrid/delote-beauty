@@ -1,12 +1,11 @@
 .Sidebar {
-  height: 100vh;
-  background-color: pink;
-  width: 0;
-
-  position: relative;
-  transition: width 0.3s;
+    height: 100vh;
+    background-color: pink;
+    width: 0;
+    position: relative;
+    transition: width 0.3s;
 }
 
 .collapsed {
-  width: 100%;
+    width: 100%;
 }

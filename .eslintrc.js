@@ -20,6 +20,7 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
+        'i18next'
     ],
     rules: {
         indent: [2, 4],
@@ -39,6 +40,7 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
+        "i18next/no-literal-string": ['error', {markupOnly: true}]
     },
     globals: {
         __IS_DEV__: true,
