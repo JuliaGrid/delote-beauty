@@ -1,23 +1,20 @@
 import { classNames } from 'helpers/classNames';
 import { FC } from 'helpers/interfaces';
 import cls from './Sidebar.module.scss';
-import {useState} from "react";
+import {ThemeSwitcher} from "widgets/ThemeSwitcher";
+import {LangSwitcher} from "widgets/LangSwitcher";
 
 interface SidebarProps {
-    
+    collapsed: boolean;
 }
 
 export const Sidebar: FC<SidebarProps> = (props) => {
-    const {} = props;
-    const [collapsed, setCollapsed] = useState(false)
-
-    const onToggle = () => {
-        setCollapsed(prev => !prev)
-    }
+    const {collapsed} = props;
 
     return (
         <div className={classNames(cls.Sidebar, {[cls.collapsed]: collapsed})}>
-            <button onClick={onToggle}>toggle</button>
+            <ThemeSwitcher />
+            <LangSwitcher />
         </div>
     )
 }
