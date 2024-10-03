@@ -1,0 +1,1 @@
+Design from https://www.figma.com/design/J1YAdL0DFrdpVyNmtRL2CU/Templates-%2323.-More-on-d-e-n.info

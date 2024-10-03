@@ -25,7 +25,12 @@ const config: Config = {
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[tj]s?(x)"
     ],
-    // rootDir: undefined,
+    // rootDir: '.',
+
+    // An array of regexp pattern strings used to skip coverage collection
+    coveragePathIgnorePatterns: [
+        "/node_modules/"
+    ],
 
     // All imported modules in your tests should be mocked automatically
     // automock: false,
@@ -47,11 +52,6 @@ const config: Config = {
 
     // The directory where Jest should output its coverage files
     // coverageDirectory: undefined,
-
-    // An array of regexp pattern strings used to skip coverage collection
-    // coveragePathIgnorePatterns: [
-    //   "/node_modules/"
-    // ],
 
     // Indicates which provider should be used to instrument code for coverage
     // coverageProvider: "babel",
