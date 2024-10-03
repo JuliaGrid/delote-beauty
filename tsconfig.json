@@ -11,6 +11,7 @@
         "allowSyntheticDefaultImports": true,
         "forceConsistentCasingInFileNames": false,
         "baseUrl": ".",
+        "resolveJsonModule": true,
         "paths": {
             "*": [
                 "./src/*"
@@ -19,7 +20,7 @@
     },
     "ts-node": {
         "compilerOptions": {
-            "module": "CommonJS"
+            "module": "CommonJS",
         }
     }
 }

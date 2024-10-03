@@ -7,7 +7,6 @@ export const AboutPage = () => {
     return (
         <div className={classes.block}>
             {t('Это блок')}
-            dfsd
         </div>
     );
 };

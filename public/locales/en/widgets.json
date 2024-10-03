@@ -1,0 +1,13 @@
+{
+    "Toggle language":  "Toggle language",
+
+    "NavBar": {
+        "Main": "Main",
+        "About": "About",
+        "Toggle": "Toggle"
+    },
+
+    "LangSwitcher": {
+        "Toggle": "Toggle language"
+    }
+}

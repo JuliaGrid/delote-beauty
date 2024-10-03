@@ -1,6 +1,8 @@
+import { t } from "i18next";
+
 const MainPage = () => (
     <div>
-        it's main page
+        {t("Main")}
     </div>
 );
 

@@ -1,17 +1,12 @@
 import { classNames } from 'helpers/classNames';
 import { FC } from 'helpers/interfaces';
 import cls from './NotFoundPage.module.scss';
+import { t } from 'i18next';
 
-interface NotFoundPageProps {
-
-}
-
-const NotFoundPage: FC<NotFoundPageProps> = (props) => {
-    const {} = props;
-
+const NotFoundPage: FC = () => {
     return (
         <div className={classNames(cls.NotFoundPage)}>
-            not found
+            {t('Not found')}
         </div>
     )
 }

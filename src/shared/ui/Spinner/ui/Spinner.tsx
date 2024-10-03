@@ -1,12 +1,6 @@
 import { FC } from 'helpers/interfaces';
 
-interface SpinnerProps {
-    
-}
-
-export const Spinner: FC<SpinnerProps> = (props) => {
-    const {} = props;
-    
+export const Spinner: FC = () => {
     return (
         <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
     )

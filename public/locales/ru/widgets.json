@@ -1,0 +1,13 @@
+{
+    "Toggle language":  "Переключить язык",
+
+    "NavBar": {
+        "Main": "Главная",
+        "About": "О",
+        "Toggle": "Переключить"
+    },
+
+    "LangSwitcher": {
+        "Toggle": "Переключить язык"
+    }
+}

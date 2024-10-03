@@ -7,7 +7,7 @@ import { AppRouter } from './router';
 import { useTheme } from './ThemeProvider';
 import './i18n/config';
 import cls from './App.module.scss';
-import {Spinner} from "shared/ui/Spinner/ui/Spinner";
+import { Spinner } from 'shared/ui/Spinner';
 
 export function App() {
     const { theme } = useTheme();
