@@ -1,22 +1,21 @@
-/* eslint-disable @typescript-eslint/ban-types */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
+import React, { ReactNode } from 'react';
+import { withTranslation } from 'react-i18next';
 
-interface MyProps {
-    children?: any;
+interface ErrorBoundaryProps {
+    children?: ReactNode;
 }
 
-interface MyState {
+interface ErrorBoundaryState {
     error: string
 }
 
-export class ErrorBoundary extends React.Component<MyProps, MyState> {
-    constructor(props: {} | Readonly<{}>) {
+class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+    constructor(props: ErrorBoundaryProps) {
         super(props);
         this.state = { error: '' };
     }
 
-    componentDidCatch(error: { name: any; message: any; }) {
+    componentDidCatch(error: { name: string; message: string; }) {
         this.setState({ error: `${error.name}: ${error.message}` });
     }
 
@@ -30,3 +29,5 @@ export class ErrorBoundary extends React.Component<MyProps, MyState> {
         return <>{this.props.children}</>;
     }
 }
+
+export default withTranslation()(ErrorBoundary)
