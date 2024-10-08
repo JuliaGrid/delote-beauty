@@ -12,7 +12,10 @@ export const Sidebar: FC<SidebarProps> = (props) => {
     const { collapsed } = props;
 
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed })}>
+        <div 
+            data-testid='Sidebar'
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed })}
+        >
             <ThemeSwitcher />
             <LangSwitcher />
         </div>

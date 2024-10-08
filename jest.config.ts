@@ -25,7 +25,17 @@ const config: Config = {
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[tj]s?(x)"
     ],
-    // rootDir: '.',
+    "modulePaths": [
+        "<rootDir>/src"
+    ],
+    setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
+    rootDir: '.',
+    moduleNameMapper: {
+        '\\.svg':  "<rootDir>/jestEmptyComponent.tsx",
+        '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+          '<rootDir>/__mocks__/fileMock.js',
+        '\\.(s?css)$': 'identity-obj-proxy',
+    },
 
     // An array of regexp pattern strings used to skip coverage collection
     coveragePathIgnorePatterns: [
