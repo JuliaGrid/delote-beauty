@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:ui": "npx loki test",
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "eslint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
-    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix",
+    "test": "jest",
+    "test:ui": "npx loki test",
+    "test:ui:ok": "npx loki approve",
+    "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook:build": "storybook build"
   },
   "keywords": [],
   "author": "",
